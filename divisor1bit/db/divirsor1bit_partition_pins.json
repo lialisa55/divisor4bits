@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BorrowOut",
+					"strict" : false
+				},
+				{
+					"name" : "Quo",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "BorrowIn",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "Controlador",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

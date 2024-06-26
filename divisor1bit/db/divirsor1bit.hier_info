@@ -1,0 +1,25 @@
+|divirsor1bit
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divirsor1bit|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
