@@ -116,11 +116,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "OsinalA",
+					"strict" : false
+				},
+				{
+					"name" : "OsinalB",
+					"strict" : false
+				},
+				{
+					"name" : "OsinalResul",
+					"strict" : false
+				},
+				{
+					"name" : "OsinalResto",
+					"strict" : false
+				},
+				{
 					"name" : "B2",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
@@ -132,7 +148,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
@@ -140,11 +156,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "A2",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
-					"name" : "A3",
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "sinalA",
+					"strict" : false
+				},
+				{
+					"name" : "sinalB",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for divisor4bit
-Wed Jun 26 22:21:14 2024
+Thu Jun 27 11:24:54 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun 26 22:21:14 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 27 11:24:54 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; divisor4bit                                 ;
 ; Top-level Entity Name           ; divisor4bit                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 36                                          ;
+; Total pins                      ; 42                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -183,25 +183,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 33       ;
+; Estimate of Logic utilization (ALMs needed) ; 34       ;
 ;                                             ;          ;
-; Combinational ALUT usage for logic          ; 50       ;
+; Combinational ALUT usage for logic          ; 51       ;
 ;     -- 7 input functions                    ; 1        ;
 ;     -- 6 input functions                    ; 15       ;
 ;     -- 5 input functions                    ; 4        ;
 ;     -- 4 input functions                    ; 22       ;
-;     -- <=3 input functions                  ; 8        ;
+;     -- <=3 input functions                  ; 9        ;
 ;                                             ;          ;
 ; Dedicated logic registers                   ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 36       ;
+; I/O pins                                    ; 42       ;
 ;                                             ;          ;
 ; Total DSP Blocks                            ; 0        ;
 ;                                             ;          ;
 ; Maximum fan-out node                        ; B0~input ;
 ; Maximum fan-out                             ; 21       ;
-; Total fan-out                               ; 289      ;
-; Average fan-out                             ; 2.37     ;
+; Total fan-out                               ; 301      ;
+; Average fan-out                             ; 2.23     ;
 +---------------------------------------------+----------+
 
 
@@ -210,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name          ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+----------------------+--------------+
-; |divisor4bit                     ; 50 (0)              ; 0 (0)                     ; 0                 ; 0          ; 36   ; 0            ; |divisor4bit                                          ; divisor4bit          ; work         ;
+; |divisor4bit                     ; 51 (1)              ; 0 (0)                     ; 0                 ; 0          ; 42   ; 0            ; |divisor4bit                                          ; divisor4bit          ; work         ;
 ;    |display_de_segmentos:inst1|  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |divisor4bit|display_de_segmentos:inst1               ; display_de_segmentos ; work         ;
 ;    |display_de_segmentos:inst27| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |divisor4bit|display_de_segmentos:inst27              ; display_de_segmentos ; work         ;
 ;    |display_de_segmentos:inst28| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |divisor4bit|display_de_segmentos:inst28              ; display_de_segmentos ; work         ;
@@ -259,19 +259,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 50                          ;
+; arriav_lcell_comb     ; 51                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 49                          ;
-;         2 data inputs ; 4                           ;
+;     normal            ; 50                          ;
+;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 4                           ;
 ;         4 data inputs ; 22                          ;
 ;         5 data inputs ; 4                           ;
 ;         6 data inputs ; 15                          ;
-; boundary_port         ; 36                          ;
+; boundary_port         ; 42                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.64                        ;
+; Average LUT depth     ; 3.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Jun 26 22:21:05 2024
+    Info: Processing started: Thu Jun 27 11:24:45 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off divisor4bit -c divisor4bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -310,13 +310,13 @@ Info (12128): Elaborating entity "subtrator_1bit" for hierarchy "divirsor1bit:in
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 50 logic cells
+Info (21057): Implemented 93 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 51 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Wed Jun 26 22:21:14 2024
+    Info: Processing ended: Thu Jun 27 11:24:54 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 
