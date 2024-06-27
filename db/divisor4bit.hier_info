@@ -1,0 +1,943 @@
+|divisor4bit
+O10 <= display_de_segmentos:inst28.0
+B3 => divirsor1bit:inst5.B
+B3 => divirsor1bit:inst9.B
+B3 => divirsor1bit:inst15.B
+B3 => divirsor1bit:inst21.B
+B3 => display_de_segmentos:inst1.A
+B2 => divirsor1bit:inst4.B
+B2 => divirsor1bit:inst10.B
+B2 => divirsor1bit:inst16.B
+B2 => divirsor1bit:inst22.B
+B2 => display_de_segmentos:inst1.B
+B1 => divirsor1bit:inst3.B
+B1 => divirsor1bit:inst11.B
+B1 => divirsor1bit:inst17.B
+B1 => divirsor1bit:inst23.B
+B1 => display_de_segmentos:inst1.C
+A0 => divirsor1bit:inst.A
+A0 => display_de_segmentos:inst27.A
+B0 => divirsor1bit:inst.B
+B0 => divirsor1bit:inst12.B
+B0 => divirsor1bit:inst18.B
+B0 => divirsor1bit:inst24.B
+B0 => display_de_segmentos:inst1.D
+A1 => divirsor1bit:inst12.A
+A1 => display_de_segmentos:inst27.B
+A2 => divirsor1bit:inst18.A
+A2 => display_de_segmentos:inst27.C
+A3 => divirsor1bit:inst24.A
+A3 => display_de_segmentos:inst27.D
+O11 <= display_de_segmentos:inst28.1
+O12 <= display_de_segmentos:inst28.2
+O13 <= display_de_segmentos:inst28.3
+O14 <= display_de_segmentos:inst28.4
+O15 <= display_de_segmentos:inst28.5
+O16 <= display_de_segmentos:inst28.6
+O00 <= display_de_segmentos:inst29.0
+O01 <= display_de_segmentos:inst29.1
+O02 <= display_de_segmentos:inst29.2
+O03 <= display_de_segmentos:inst29.3
+O04 <= display_de_segmentos:inst29.4
+O05 <= display_de_segmentos:inst29.5
+O06 <= display_de_segmentos:inst29.6
+BO0 <= display_de_segmentos:inst1.0
+BO1 <= display_de_segmentos:inst1.1
+BO2 <= display_de_segmentos:inst1.2
+BO3 <= display_de_segmentos:inst1.3
+BO4 <= display_de_segmentos:inst1.4
+BO5 <= display_de_segmentos:inst1.5
+BO6 <= display_de_segmentos:inst1.6
+AO0 <= display_de_segmentos:inst27.0
+AO1 <= display_de_segmentos:inst27.1
+AO2 <= display_de_segmentos:inst27.2
+AO3 <= display_de_segmentos:inst27.3
+AO4 <= display_de_segmentos:inst27.4
+AO5 <= display_de_segmentos:inst27.5
+AO6 <= display_de_segmentos:inst27.6
+
+
+|divisor4bit|display_de_segmentos:inst28
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst6
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst6|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst5
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst5|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst4
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst4|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst3
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst3|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst8
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst8|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst9
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst9|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst10
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst10|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst11
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst11|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst12
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst12|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst14
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst14|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst15
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst15|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst16
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst16|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst17
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst17|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst18
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst18|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst20
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst20|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst21
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst21|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst22
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst22|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst23
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst23|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|divirsor1bit:inst24
+BorrowOut <= subtrator_1bit:inst5.BorrowOut
+A => subtrator_1bit:inst5.A
+A => inst2.IN1
+B => subtrator_1bit:inst5.B
+BorrowIn => subtrator_1bit:inst5.BorrowIn
+Quo <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Controlador => inst4.IN0
+Controlador => inst2.IN0
+
+
+|divisor4bit|divirsor1bit:inst24|subtrator_1bit:inst5
+Diff <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst7.IN0
+A => inst.IN0
+B => inst8.IN0
+B => inst4.IN0
+B => inst2.IN1
+BorrowIn => inst8.IN1
+BorrowIn => inst3.IN1
+BorrowIn => inst4.IN1
+BorrowOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|display_de_segmentos:inst29
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|display_de_segmentos:inst1
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor4bit|display_de_segmentos:inst27
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
